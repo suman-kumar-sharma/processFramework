@@ -6,11 +6,11 @@ import com.scoreme.processframework.exception.StepExecutionException;
 /**
  * The type Email onboarding step.
  */
-public class EmailOnboardingStep extends AbstractProcessStep<Context,Boolean> {
+public class EmailOnboardingStep extends AbstractProcessStep<Context, Boolean> {
     @Override
     public Boolean execute(Context context) throws StepExecutionException {
         System.out.println("Email Onboarding...........");
-        context.set("emailOnboarded",true);
+        context.set("emailOnboarded", true);
         return true;
     }
 }
